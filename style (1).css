@@ -1,0 +1,47 @@
+body {
+  background-color: #FFF8DC;
+  font-family: 'Monaco', monospace;
+  text-align: left;
+  border: 3px solid #D3D3D3;
+}
+
+h1, h2, h3 {
+  font-family: "Berkshire Swash", sans-serif;
+  color: #8B4513;
+  text-shadow: 3px 3px 3px #B2B2B2;
+  font-style: italic;
+}
+
+p {
+  color: #5C4033;
+}
+
+li {
+  color: #333333;
+}
+
+ul {
+  border: 3px solid #B0C4DE;
+}
+
+figcaption {
+  font-size: small;
+  color: #5C4033;
+}
+fieldset {
+  border: 2px solid #8B4513; /* Saddle brown border */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+legend {
+  font-family: "Berkshire Swash", sans-serif;
+  color: #8B4513;
+  font-size: 1.2em;
+}
+
+label {
+  margin-right: 10px;
+  font-family: 'Monaco', monospace;
+  color: #5C4033;
+}

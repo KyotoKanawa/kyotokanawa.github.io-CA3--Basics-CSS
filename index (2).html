@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Greek Yogurt Parfait</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>  
+</head>
+
+<body>
+  <h1>Greek Yogurt Parfait</h1>
+  <p>Recipe provided by Deliciously Fit, found on https://www.deliciouslyfit.com/</p>
+  <script src="script.js"></script>
+
+  <figure>
+    <img src="Greek Parfrait.jpg" alt="Greek Yogurt Parfait" width="300" height="300"/>
+    <figcaption>Photo by: Pexels, CC0 1.0 Universal Public Domain<br>https://pexels.com/photos/greek-yogurt-parfait<br> via Pexels</figcaption>
+  </figure>
+
+  <h3>Ingredients</h3>
+  <ul>
+    <li>1 cup Greek yogurt</li>
+    <li>1/2 cup granola</li>
+    <li>1/2 cup mixed berries (strawberries, blueberries, raspberries)</li>
+    <li>1 tbs honey</li>
+  </ul>
+
+  <h3>Equipment</h3>
+  <ul>
+    <li>Bowl</li>
+    <li>Spoon</li>
+  </ul>
+  <h3>Conversion</h3>
+  <input type="number" id="tablespoons" name="tablespoons" placeholder="tablespoons">
+  =
+  <input type="number" id="cups" name="cups" placeholder="cups">
+  <button onclick="convert()">Convert</button>
+  <script>
+    function convert() {
+      const tablespoons = document.getElementById('tablespoons').value;
+      const cups = tablespoons / 16; // Assuming 16 tablespoons in a cup
+      document.getElementById('cups').value = cups;
+    }
+  </script>
+
+
+  <<h3>Rate this recipe</h3> 
+    <fieldset>
+      <legend>How difficult was this recipe?</legend>
+      <label for="easy">Easy</label>
+      <input type="radio" id="easy" name="difficulty" value="easy">
+      <label for="med">Medium</label>
+      <input type="radio" id="med" name="difficulty" value="med">
+      <label for="hard">Hard</label>
+      <input type="radio" id="hard" name="difficulty" value="hard">
+    </fieldset>
+
+
+  <h3>Directions</h3>
+  <ol>
+    <li>In a bowl, layer half of the Greek yogurt.</li>
+    <li>Add a layer of granola and mixed berries.</li>
+    <li>Drizzle with honey.</li>
+    <li>Repeat the layers with the remaining ingredients.</li>
+    <li>Serve immediately and enjoy!</li>
+  </ol>
+</body>
+</html>
